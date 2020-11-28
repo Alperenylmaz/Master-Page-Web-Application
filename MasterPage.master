@@ -1,0 +1,250 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="image/icon.png"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <style type="text/css">
+        .auto-style1 {
+            width: 616px;
+            text-align: center;
+        }
+        .auto-style2 {
+            width: 3737px;
+        }
+        .auto-style6 {
+            width: 1000px;
+            height: 345px;
+        }
+        .auto-style20 {
+            padding-left: 15px;
+            padding-right: 15px;
+            height: 39px;
+        }
+        .auto-style21 {
+            font-family: "Arial Unicode MS";
+            font-size: 15px;
+            font-weight: 600;
+            color: #FF0000;
+            height: 39px;
+            width: 203px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .auto-style23 {
+            padding-left: 15px;
+            padding-right: 15px;
+            height: 165px;
+        }
+        .auto-style24 {
+            font-family: "Arial Unicode MS";
+            font-size: 15px;
+            font-weight: 600;
+            color: #FF0000;
+            height: 39px;
+            width: 197px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .auto-style25 {
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 197px;
+            height: 165px;
+        }
+        .auto-style31 {
+            width: 49%;
+        }
+        .auto-style32 {
+            width: 36px;
+            height: 36px;
+        }
+        .auto-style33 {
+            font-family: "Arial Unicode MS";
+            font-size: 15px;
+            font-weight: 600;
+            color: #FF0000;
+            height: 39px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+<%-- Üs Kısım --%>
+        <div class="ust">
+<div class="ust_ic">
+
+    <table style="width: 995px">
+        <tr>
+            <td>
+                <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/image/logo1.png" Width="134px" OnClick="ImageButton2_Click1" Height="40px" />
+            </td>
+            <td class="auto-style2">&nbsp;&nbsp;</td>
+            <% if (Session["ad"] == null) { %>
+                    <td class="auto-style1 btn_6"><a href="frmGiris.aspx" class="yazi_6">Member Login</a></td>
+            <% }
+               else { %>
+                <td class="auto-style1 btn_6">
+                    <asp:LinkButton ID="LinkButton1" runat="server" CssClass="yazi_6" OnClick="LinkButton1_Click">Exit</asp:LinkButton>
+                </td>
+                <td class="auto-style1 btn_6"><a class="yazi_6">Welcome <% Response.Write(Session["ad"].ToString()); %></a></td>
+            <% } %>
+            <td><asp:TextBox CssClass="aramakutu txt_arama" ID="TextBox1" runat="server" Height="14px" Width="208px" Font-Bold="True" Font-Overline="False" Font-Size="Medium" Font-Strikeout="False" ></asp:TextBox></td>
+            <td class="arama_btn"><asp:ImageButton ID="ImageButton1" runat="server" Height="30px" ImageUrl="~/image/search.png" Width="30px" onMouseMove="this.src='image/search_hover.png'" onMouseOut="this.src='image/search.png'" ></asp:ImageButton></td>
+            
+        </tr>
+    </table>
+
+</div>
+</div>
+
+<div class="ustmenu">
+<div class="ustmenu_ic">
+<div id="menu">
+<ul>
+
+  <li><a href="#">&nbsp;Kişisel Çözümler</a>
+    	<ul>
+        <li><a href="#">Ev İçin</a></li>
+        <li><a href="#">Fotoğraf Makinesi</a></li>
+        <li><a href="#">Yazıcılar</a></li>
+        <li><a href="#">Video Kamera</a></li>
+        <li><a href="#">Diğer Ürünler</a></li>
+        <li><a href="#">Ürün Kaydet</a></li>
+        <li><a href="#">Öğrenin</a></li>
+        <li><a href="#">İrista</a></li>
+        <li><a href="#">Connect Station</a></li>
+        </ul>  
+   </li>
+      
+
+    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;İş Çözümleri</a>
+    	<ul>
+        <li><a href="#">İş İçin</a></li>
+        <li><a href="#">İşletmem</a></li>
+        <li><a href="#">Kurumsal Hizmetler</a></li>
+        <li><a href="#">Kurumsal Ürünler</a></li>
+        <li><a href="#">Medya ve Sarf Malzemeleri</a></li>
+        <li><a href="#">Uygulama İncelemeleri</a></li>
+        <li><a href="#">Satıcı ve Ortaklar</a></li>
+        </ul>
+    </li>
+    
+    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Destek</a>
+      	<ul>
+        <li><a href="#">Destek Ana Sayfa</a></li>
+        <li><a href="#">Tüketici Ürünleri</a></li>
+        <li><a href="#">Kurumsal Ürünler</a></li>
+      	</ul>
+      
+    </li>
+    
+    <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;Satış Noktları</a><ul>
+        <li><a href="#">Nereden Satın Alınır</a></li>
+        <li><a href="#">Tüketici Ürünleri</a></li>
+        <li><a href="#">Kurumsal Çözümler</a></li>
+      	</ul>
+     </li>
+</ul>
+
+</div>
+</div>
+</div>
+        <%-- Bitiş --%>
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <%-- Alt Bolum --%>
+        <div class="altbolum_1">
+         <div class="altbolum_1_ic">
+
+
+         </div>
+        </div>
+        <%-- Altbolum Bitiş --%>
+
+        <%-- En Alt Bolum Baslagic --%>
+
+        <div class="enaltbolum">
+        <div class="enaltbolum_ic">
+
+            <table class="auto-style6">
+                <tr>
+                    <td class="auto-style21">Kişisel Çözümler</td>
+                    <td class="auto-style24">İş Çözümleri</td>
+                    <td class="auto-style33">Destek</td>
+                    <td class="auto-style33">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bizi Takip Edin</td>
+                </tr>
+                <tr>
+                    <td class="altmenuayar "><a href="#" class="alt_bolum_yazi">EOS Dijital SLR ve Kompakt<br> Sistemli Fotoğraf Makineleri<br />
+                        <br /></a>
+                        <a href="#" class="alt_bolum_yazi">PowerShoot ve IXUS<br /></a>
+                        <br />
+                        <a href="#" class="alt_bolum_yazi">PIXMA Mürekkep Püskürtmeli Yazıcılar<br /></a>
+                        <br />
+                        <a href="#" class="alt_bolum_yazi">LEGRIA HD Video Kameralar</td></a>
+                    <td class="auto-style25 "><a href="#" class="alt_bolum_yazi">İş Çözümleri<br /></a>
+                        <br />
+                        <a href="#" class="alt_bolum_yazi">Kurumsal ürünler<br /></a>
+                        <br />
+                        <a href="#" class="alt_bolum_yazi">Kurumsal hizmetler<br /></a>
+                        <br />
+                        <a href="#" class="alt_bolum_yazi">Örnek Çalışma İncelemeleri</a><br />
+                    </td></a>
+                    <td class="auto-style23 "><a href="#" class="alt_bolum_yazi">İş için destek</a><br />
+                        <br />
+                        <a href="#" class="alt_bolum_yazi">Bize ulaşın</a><br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </td></a>
+                    <td class="auto-style23">
+                        <table align="center" class="auto-style31">
+                            <tr>
+                                <td style="text-align: center">
+                                    <a href="https://www.facebook.com/CanonTurkiye" target="_blank"><img alt="" class="auto-style32" src="image/facebook.jpg" /></a></td>
+                                <td style="text-align: center">
+                                    <a href="https://twitter.com/Canon_Tr"target="_blank"><img alt="" class="auto-style32" src="image/twiter.jpg" /></a></td>
+                                <td style="text-align: center">
+                                    <a href="https://www.youtube.com/user/CanonTurkey"target="_blank"><img alt="" class="auto-style32" src="image/youtube.jpg" /></a></td>
+                            </tr>
+                        </table>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="altmenuayar" colspan="4"><a href="#" class="alt_bolum_yazi">Copyright 2018</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" class="alt_bolum_yazi">Hakkımızda</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" class="alt_bolum_yazi">Bize Ulaşın</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" class="alt_bolum_yazi">Satış Norktaları</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" class="alt_bolum_yazi">Şart ve Kullanım Koşulları</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" class="alt_bolum_yazi">Tanımlama Bilgisi Hakkında Bilgiler</a>
+                        <br />
+                        <a href="#" class="alt_bolum_yazi">Bilgi Toplumu Hizmetleri</a></td>
+                </tr>
+            </table>
+
+        </div>
+        </div>
+
+        <%-- En Alt Bolum Bitiş --%>
+
+    </div>
+    </form>
+</body>
+</html>

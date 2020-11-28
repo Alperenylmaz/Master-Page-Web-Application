@@ -1,0 +1,412 @@
+﻿body {
+margin:0px;
+padding:0px;
+border:0px;
+}
+
+.ust{
+    top:10px;
+	width:auto;
+	height:68px;
+	background-color:#fff;
+    
+}
+
+.ust_ic{
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	height:68px;
+	background-color:#fff;
+    border:0px;
+}
+
+.ustmenu{
+	width:1065px;
+	height:50px;
+	background-color:#fff;
+    margin-left:auto;
+	margin-right:auto;
+}
+
+.ustmenu_ic{
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	height:50px;
+	background-color:#fff;
+    
+   
+}
+
+
+.icerik{
+	width:auto;
+	height:500px;
+	background-color:#fff;
+}
+
+.icerik_ic{
+	width:1000px;
+	height:500px;
+	background-color:#fff;
+	margin-left:auto;
+	margin-right:auto;
+}
+	
+#menu {
+	height: 50px;
+	width: 750px;
+}
+#menu ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	clip: rect(auto,auto,auto,auto);
+}
+#menu ul li ul {
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 50px;
+}
+
+#menu ul li {
+	display: block;
+	float: left;
+	position: relative;
+	height: 50px;
+	width: 150px;
+}
+#menu ul li a {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight:600;
+	color: #343434;
+	background-color: #fff;
+	display: block;
+	font-size: 14px;
+	text-decoration: none;
+	line-height: 50px;
+	padding-left: 15px;
+}
+#menu ul li a:hover {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: 600;
+	color: #d00d0b;
+	background-color: #fff;
+	display: block;
+	font-size: 14px;
+	text-decoration: none;
+	line-height: 50px;
+	padding-left: 15px;
+}
+#menu ul li:hover ul {
+	display: block;
+}
+
+
+.logo
+{
+    padding-top:20px;
+    padding-left:7px;
+}
+
+.aramakutu {
+    padding-top: 20px;
+}
+
+
+.yazi_6 
+{
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #343434;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight:600;
+}
+
+.yazi_6:hover 
+{
+    font-family: Tahoma, Geneva, sans-serif;
+    color:#d00d0b;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight:600;
+}
+
+
+.arama_btn {
+    padding-top: 6px;
+}
+
+.txt_arama 
+{
+    color:#808080;
+    font-size:25px;
+    bottom:15px;
+}
+
+.altbolum_1 
+{
+    width:auto;
+    height:40px;
+    background-color:#4b4f54;
+}
+
+.altbolum_1_ic
+{
+    width:1000px;
+    height:40px;
+    background-color:#4b4f54;
+    margin-left:auto;
+    margin-right:auto;
+}
+.icon {
+    padding-top: 3px;
+}
+
+.enaltbolum 
+{   margin-top:5px;
+    width:auto;
+    height:350px;
+    background-color:#fff;
+}
+
+
+.enaltbolum_ic {
+    margin-top:5px;
+    border:solid 0px ;
+    width: 1000px;
+    height: 350px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-links {
+    left: 5px;
+}
+.altmenuayar {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.auto-style20 {
+    font-family:'Arial Unicode MS';
+    font-size: 15px;
+    font-weight: 600;
+    color: #FF0000;
+}
+
+.alt_bolum_yazi  
+{
+    font-family:'Arial Unicode MS';
+    font-size:14px;
+    color:#333333;
+    font-weight:300;
+    text-decoration:none;
+}
+
+.alt_bolum_yazi:hover
+{
+    font-family:'Arial Unicode MS';
+    font-size:14px;
+    color:#333333;
+    font-weight:300;
+    text-decoration:underline;
+}
+
+/*Üye Sayfası*/
+
+
+.uye_giris {
+    margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	height:250px;
+	background-color:#fff;
+    border:1px solid #000;
+    border:0px;
+    margin-bottom:5px;
+    margin-top:5px;
+}
+
+.uye_yazi_baslik{
+    color:#333333;
+    font-size:30px;
+    font-weight:500;
+}
+
+.uye_yazi {
+    color:#333333;
+    font-size:20px;
+    font-weight:300;
+}
+
+.uye_yazi_1{
+    font-family:'Arial Unicode MS';
+    font-size:15px;
+    color:#333333;
+    font-weight:500;
+    text-decoration:none;
+}
+
+.uye_yazi_1:hover{
+     font-family:'Arial Unicode MS';
+    font-size:14px;
+    color:#333333;
+    font-weight:300;
+    text-decoration:underline;
+
+}
+
+.frmkayit_div 
+{
+    border-style: none;
+    border-color: inherit;
+    border-width: 0px;
+    margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	height:680px;
+	background-color:#fff;
+    }
+.kayit_yazi {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.kayit_yazi2 {
+    font-family: arial, Helvetica, sans-serif;
+}
+
+.anasayfa_1 {
+    margin-left:auto;
+	margin-right:auto;
+	width:1348px;
+	height:554px;
+	background-color:white;
+    border:0px;
+}
+
+.anasayfa_2 {
+    margin-left:auto;
+	margin-right:auto;
+	width:auto;
+	height:105px;
+	background-color:#eff0f0;
+    border:0px;
+}
+
+.anasayfa_2_ic {
+    margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	height:105px;
+	background-color:#eff0f0;
+    border:0px;
+}
+
+
+.yazi_no_1 {
+    font-family: sans-serif;
+    font-size: 45px;
+    color: #CC0000;
+    padding-left: 10px;
+}
+.yazi_no_2 {
+    font-family: sans-serif;
+    font-size: 20px;
+    padding-left: 14px;
+    color: #666666;
+}
+.asd {
+    padding-left: 65px;
+}
+
+
+.anasayfa_3 {
+    margin-left:auto;
+	margin-right:auto;
+	width:auto;
+	height:800px;
+	background-color:#fff;
+    border:0px;
+    
+}
+
+.anasayfa_3_ic {
+    margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	height:800px;
+	background-color:#fff;
+    border:0px;
+}
+.no142 {
+    padding-left: 30px;
+}
+.no142 
+{
+
+}
+.no143 {
+    padding-left: 25px;
+}
+.newStyle1 {
+    padding-left: 25px;
+}
+.no111 {
+    font-family: sans-serif;
+    font-weight: 200;
+    color: #666666;
+    text-decoration:none;
+}
+
+.no111:hover {
+    font-family: sans-serif;
+    font-weight: 200;
+    color: #5fafc4;
+    text-decoration:none;
+}
+
+.n123 {
+    margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	height:310px;
+	background-color:#fff;
+    }
+.uye_yazi_baslik {
+}
+.uye_yazi {
+}
+.uye_yazi {
+}
+
+.no827 {
+    margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	height:50px;
+	background-color:#fff;
+}
+
+.no8272 {
+    margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	height:320px;
+	background-color:#fff;
+}
+.uye_yazi {
+}
+.uye_yazi {
+}
+
+.frmSon1 {
+    margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	height:60px;
+	background-color:#fff;
+}
+.uye_yazi {
+}
